@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background: url(../img/fondo.webp);
+}
+/*ESTILO Index */
+a {
+    text-decoration: none;
+    color: black;
+}
+header nav ul{
+    list-style-type: none;
+    background-image: linear-gradient(to bottom, rgb(145, 72, 72), pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li{
+    background-color: white;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    margin: 1.5rem;
+    padding: 0.5rem;
+}
+.imgs{
+    width: 70%;
+}
+
+/* Grids Index */
+.contenidoIndex{
+    display: grid;
+    gap: 2.5rem;
+    grid-template-areas: "titulos img1" 
+                         "parrafo img2";
+    margin: 3rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.titulos{
+    grid-area: titulos;
+}
+.img1{
+    grid-area: img1;
+    display: flex;
+}
+.img2{
+    grid-area: img2;
+    display: flex;
+}
+.parrafo{
+    grid-area: parrafo;
+}
+/* Media queries tablet */
+@media screen and (max-width: 768px){
+    .contenidoIndex{
+        grid-template-areas: "titulos titulos"
+                            "parrafo parrafo" 
+                             "img1 img2";
+    }
+    .titulos{
+        grid-area: titulos;
+        font-size: 1.4rem;
+    }
+    .parrafo{
+        grid-area: parrafo;
+        font-size: 1.1rem;
+    }
+    .img1{
+        grid-area: img1;
+    }
+    .img2{
+        grid-area: img2;
+    }
+}
+
+/* Media queries celular */
+@media screen and (max-width: 414px){
+    header nav ul{
+        font-size: 0.8rem;
+    }
+    header nav ul li{
+        margin: 0.8rem;
+    }
+    .contenidoIndex{
+        grid-template-areas: "titulos"
+                             "parrafo"
+                             "img1"
+                             "img2";
+    }
+    .titulos{
+        grid-area: titulos;
+        font-size: 1.4rem;
+    }
+    .parrafo{
+        grid-area: parrafo;
+        font-size: 1.1rem;
+    }
+    .img1{
+        grid-area: img1;
+    }
+    .img2{
+        grid-area: img2;
+    }
+    .imgs{
+        width: 100%;
+    }
+}
+
+/*ESTILO footer */
+.footer{
+    background-image: linear-gradient(to top, rgb(145, 72, 72), pink);
+}
+.footer1{
+    color: black;
+    text-align: center;
+}
+.footer2{
+    color: black;
+    text-align: center;
+}
+
+/*ESTILO audio*/
+.mainAudio{
+    margin-top: 3,7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.mainAudio h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.sectionAudio{
+    margin: 25px 15px;
+}
+.mic{
+    width: 70%;
+}
+/*ESTILO bio*/
+.tituloBio{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+.imgBio:hover{
+    transform: scale(1.1);
+}
+/* Grids BIO*/
+.gridBio{
+    display: grid;
+    gap: 15px;
+    align-items: center;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+    grid-template-areas: "parrafoBio parrafoBio"
+                         "imgBio1 imgBio2"
+                         "sectionBio sectionBio";
+}
+.parrafoBio{
+    grid-area: parrafoBio;
+}
+.imgBio1{
+    grid-area: imgBio1;
+   text-align: center;
+}
+.imgBio2{
+    grid-area: imgBio2;
+    text-align: center;
+}
+.sectionBio{
+    grid-area: sectionBio;
+}
+.imgBio{
+    width: 50%;
+    object-fit: contain;
+    transition: 1s;
+}
+/* Media queries tablet*/
+@media screen and (max-width: 768px){
+    .gridBio{
+        grid-template-areas: "parrafoBio parrafoBio"
+                             "imgBio1 imgBio2"
+                             "sectionBio sectionBio";
+    }
+    .parrafoBio{
+        grid-area: parrafoBio;
+    }
+    .imgBio1{
+        grid-area: imgBio1;
+       text-align: center;
+    }
+    .imgBio2{
+        grid-area: imgBio2;
+        text-align: center;
+    }
+    .sectionBio{
+        grid-area: sectionBio;
+    }
+}
+/* Media queries celular*/
+@media screen and (max-width: 414px){
+    .imgBio {
+        width: 80%;
+    }
+    .gridBio{
+        grid-template-areas: "parrafoBio"
+                             "imgBio1" 
+                             "imgBio2"
+                             "sectionBio";
+    }
+    .parrafoBio{
+        grid-area: parrafoBio;
+    }
+    .imgBio1{
+        grid-area: imgBio1;
+    }
+    .imgBio2{
+        grid-area: imgBio2;
+    }
+    .sectionBio{
+        grid-area: sectionBio;
+    }
+}
+
+/*ESTILO obras*/
+.tituloObras{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+.imgObras{
+    width: 50%;
+}
+/* Grids obras*/
+.contenidoObras{
+    display: grid;
+    gap: 1.5rem;
+    margin: 3rem;
+    grid-template-areas: "parrafoObras parrafoObras parrafoObras"
+                         "partitura1 partitura2 partitura3"        
+                         "partitura4 partitura5 partitura6"
+                         "partitura7 partitura8 partitura9";
+}
+.parrafoObras{
+    grid-area: parrafoObras;
+}
+.partitura1{
+    grid-area: partitura1;
+}
+.partitura2{
+    grid-area: partitura2;
+}
+.partitura3{
+    grid-area: partitura3;
+}
+.partitura4{
+    grid-area: partitura4;
+}
+.partitura5{
+    grid-area: partitura5;
+}
+.partitura6{
+    grid-area: partitura6;
+}
+.partitura7{
+    grid-area: partitura7;
+}
+.partitura8{
+    grid-area: partitura8;
+}
+.partitura9{
+    grid-area: partitura9;
+}
+/* Media queries tablet*/
+@media screen and (max-width: 768px){
+    .contenidoObras{
+    grid-template-areas: "parrafoObras parrafoObras"
+                         "partitura1 partitura2"        
+                         "partitura3 partitura4"
+                         "partitura5 partitura6"
+                         "partitura7 partitura8"
+                         "partitura9 partitura9";
+}
+}
+.parrafoObras{
+    grid-area: parrafoObras;
+}
+.partitura1{
+    grid-area: partitura1;
+}
+.partitura2{
+    grid-area: partitura2;
+}
+.partitura3{
+    grid-area: partitura3;
+}
+.partitura4{
+    grid-area: partitura4;
+}
+.partitura5{
+    grid-area: partitura5;
+}
+.partitura6{
+    grid-area: partitura6;
+}
+.partitura7{
+    grid-area: partitura7;
+}
+.partitura8{
+    grid-area: partitura8;
+}
+.partitura9{
+    grid-area: partitura9;
+}
+
+/*ESTILO contacto*/
+.sectionContacto{
+    margin-top: 3,7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.infoContacto h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.infoContacto p{
+    margin: 2rem 1rem;
+}
+
