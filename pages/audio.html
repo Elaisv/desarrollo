@@ -6,59 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <!--css animare.style-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Audio</title>
 </head>
 <body>
     <!--Menú-->
     <header>
         <nav>
-            <ul>
-                <li> <a href="../index.html"> Inicio </a> </li>
-                <li> <a href="biografia.html"> Biografía </a> </li>
-                <li> <a href="obras.html"> Obras </a> </li>
-                <li> <a href="audio.html"> Audio </a> </li>
-                <li> <a href="contacto.html"> Contacto </a> </li>
+            <ul class="navElais">
+                <li> <a class="linkElais" href="../index.html"> Inicio </a> </li>
+                <li> <a class="linkElais" href="biografia.html"> Biografía </a> </li>
+                <li> <a class="linkElais" href="obras.html"> Obras </a> </li>
+                <li> <a class="linkElais" href="audio.html"> Audio </a> </li>
+                <li> <a class="linkElais" href="contacto.html"> Contacto </a> </li>
             </ul>
         </nav>
     </header>
     <!--Contenido-->
     <main>
-        <div class="mainAudio">
-            <h1 class="animate__animated animate__slideInDown"> Mis composiciones </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, adipisci. 
+        <div class="tituloAudio">
+          <h1 class="animate__animated animate__slideInDown letra"> Mis composiciones </h1>
+        </div>
+        <div class="container">
+          <p class="colorLetra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, adipisci. 
             Ex, saepe odio ratione, reiciendis deleniti, harum dolores iure 
             fugiat voluptate unde quis porro optio sunt? Doloremque sunt error officia?</p>
         </div>
-        <div class="mic">
-            <img src="../img/mic.webp" alt="microfono">
-        </div>
-    
-        <section class="sectionAudio">
-            <h2>Obras más actuales</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt ad 
-            repellendus quae saepe, aperiam accusantium praesentium. Facilis inventore est, 
-            impedit sint eius praesentium quas laudantium sapiente placeat quidem corporis!</p>
-        </section>
     </main>
     <!--Lista de links-->
 
-    <!--<section>
-        <ul>
-            <ol></ol>
-            <ol></ol>
-            <ol></ol>
-            <ol></ol>
-        </ul>
-    </section>-->
+      <div class="row">
+        <div class="col-4 m-auto p-4">
+          <div class="card text-bg-secondary">
+            <div class="card-body">
+              <h2 class="card-title text-center">Special title treatment</h2>
+              <audio controls class="container" src="../mp3/rebotesEspirales.mp3"></audio>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 m-auto p-4">
+          <div class="card text-bg-secondary">
+            <div class="card-body">
+              <h2 class="card-title text-center">Special title treatment</h2>
+              <audio controls class="container" src="../mp3/rebotesEspirales.mp3"></audio>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 m-auto p-4">
+          <div class="card text-bg-secondary">
+            <div class="card-body">
+              <h2 class="card-title text-center">Special title treatment</h2>
+              <audio controls class="container" src="../mp3/rebotesEspirales.mp3"></audio>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 m-auto p-4">
+          <div class="card text-bg-secondary">
+            <div class="card-body">
+              <h2 class="card-title text-center">Special title treatment</h2>
+              <audio controls class="container" src="../mp3/rebotesEspirales.mp3"></audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--Imagen-->
+    <!--<div>
+        <img src="../img/mic.webp" class="img-fluid w-20 container m-5" alt="microfono">
+    </div>-->
 
     <!--Footer-->
-    <footer class="footer">
-        <p class="footer1">Enrique Viegas - Compositor</p>
-        <p class="footer2">Todos los derechos reservados</p>
-    </footer>
+    <footer class="footerElais">
+      <p class="footer1">Enrique Viegas - Compositor</p>
+      <p class="footer1">Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>
