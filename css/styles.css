@@ -80,7 +80,7 @@ header nav ul li{
 }
 
 /* Media queries celular */
-@media screen and (min-width: 375px){
+@media screen and (min-width: 280px) and (max-width:414px){
     header nav ul{
         font-size: 0.8rem;
     }
@@ -199,7 +199,7 @@ header nav ul li{
     }
 }
 /* Media queries celular*/
-@media screen and (min-width: 375px){
+@media screen and (min-width: 280px) and (max-width:414px) {
     .imgBio {
         width: 80%;
     }
@@ -371,7 +371,7 @@ header nav ul li{
 }
 
 /* Media queries celular*/
-@media screen and (min-width: 375px){
+@media screen and (min-width: 280px) and (max-width: 414px) {
     .mapa{
         display: none;
     }
