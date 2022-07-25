@@ -6,24 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <!--css animare.style-->
-    <link
-    rel="stylesheet"
+    <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+    <!--Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <title>Enrique Viegas compositor</title>
 </head>
 
 <body>
     <!--Menú-->
-    <header>    
-        <nav>
-            <ul class="navElais">
-                <li> <a class="linkElais" href="index.html"> Inicio </a> </li>
-                <li> <a class="linkElais" href="pages/biografia.html"> Biografía </a> </li>
-                <li> <a class="linkElais" href="pages/obras.html"> Obras </a> </li>
-                <li> <a class="linkElais" href="pages/audio.html"> Audio </a> </li>
-                <li> <a class="linkElais" href="pages/contacto.html"> Contacto </a> </li>
-            </ul>
-        </nav>
+    <header>
+        <a href="index.html"><img class="bannerHeader" src="img/violin.webp" alt="Banner"></a>   
+        <nav class="navbar navbar-expand-lg navbar-light bgNav opacity-100 navbarEli">
+            <div class="container-fluid">
+              <button class="navbar-toggler fontNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navbarEs" id="navbarNav">
+                <ul class="navbar-nav navElais">
+                  <li class="nav-item">
+                    <a class="linkElais" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="linkElais" href="pages/biografia.html">Biografía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="linkElais" href="pages/obras.html">Obras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="linkElais" href="pages/audio.html">Audio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="linkElais" href="pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <!--Contenido-->
     <main>
@@ -40,28 +63,37 @@
             Voluptatibus est labore magni earum.
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
             Temporibus sit quis consectetur aliquid eligendi, nostrum tenetur, 
-            laborum vel vero porro assumenda eaque perferendis voluptas reiciendis? 
-            Voluptatibus est labore magni earum.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Temporibus sit quis consectetur aliquid eligendi, nostrum tenetur, 
-            laborum vel vero porro assumenda eaque perferendis voluptas reiciendis? 
-            Voluptatibus est labore magni earum.
+            laborum vel vero porro assumenda eaque perferendis voluptas reiciendis?
             </p>
             </div>
     
     <!--Imagenes-->
             <div class="img1">
-                <img class="imgs" src="img/fotoPerfil.webp" alt="fotoPerfil">
+              <img class="imgs" src="img/fotoPerfil.webp" alt="fotoPerfil">
             </div>
             <div class="img2">
-                <img class="imgs" src="img/img-inicio1.webp" alt="img-inicio1">
+              <img class="imgs" src="img/img-inicio1.webp" alt="img-inicio1">
             </div>
         </div>
     </main>
     <!--Footer-->
     <footer class="footerElais">
-        <p class="footer1">Enrique Viegas - Compositor</p>
-        <p class="footer1">Todos los derechos reservados</p>
+      <nav class="contRedes">
+        <div class="redes">
+          <div class="instagram">            
+            <a href="https://www.instagram.com/coderhouse/" target="_blank">
+              <img class="imgRedes" src="img/ig.webp" alt="icono Instagram">
+            </a>
+          </div>
+          <div class="facebook">
+            <a href="https://www.facebook.com/Coderhouse/" target="_blank">
+              <img class="imgRedes" src="img/fb.webp" alt="icono Facebook">
+            </a>
+          </div>
+        </div>
+      </nav>
+      <p class="footer1">Enrique Viegas - Compositor</p>
+      <p class="footer1">Todos los derechos reservados</p>
     </footer>
 </body>
 </html>

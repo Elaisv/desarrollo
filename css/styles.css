@@ -5,27 +5,35 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
-    background: url(../img/fondon.webp);
+    background: url(../img/fondo.webp);
 }
 /*ESTILO Index */
+.bannerHeader{
+    width: 100%;
+}
+.navbarEs{
+    justify-content: center; 
+}
+.nav-item{
+    background-color: white;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    margin: 1.5rem;
+    padding: 0.5rem;
+}
+.nav-item:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
 .linkElais{
     text-decoration: none;
     color: black;
 }
 .navElais{
     list-style-type: none;
-    background-image: linear-gradient(to bottom, rgb(145, 72, 72), pink);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-header nav ul li{
-    background-color: white;
-    border-radius: 1.5rem;
-    font-weight: bold;
-    margin: 1.5rem;
-    padding: 0.5rem;
 }
 .imgs{
     width: 70%;
@@ -57,7 +65,18 @@ header nav ul li{
     grid-area: parrafo;
 }
 /* Media queries tablet */
-@media screen and (max-width: 768px){
+@media screen and (min-width: 415px) and (max-width: 768px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
     .contenidoIndex{
         grid-template-areas: "titulos titulos"
                             "parrafo parrafo" 
@@ -81,11 +100,15 @@ header nav ul li{
 
 /* Media queries celular */
 @media screen and (min-width: 280px) and (max-width:414px){
-    header nav ul{
-        font-size: 0.8rem;
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 15px;
     }
-    header nav ul li{
-        margin: 0.8rem;
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
     }
     .contenidoIndex{
         grid-template-areas: "titulos"
@@ -114,12 +137,26 @@ header nav ul li{
 
 /*ESTILO footer */
 .footerElais{
-    background-image: linear-gradient(to top, rgb(145, 72, 72), pink);
+    background: rgb(247,218,171);
+    background: linear-gradient(0deg, rgba(247,218,171,1) 25%, rgba(239,204,230,1) 100%);
+}
+.contRedes{
+    display: flex;
+    justify-content: center;
+}
+.redes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.imgRedes{
+    width: 3.5%;
 }
 .footer1{
     color: black;
     text-align: center;
-    
+    font-size: 0.8em;
+    margin-bottom: 0px;
 }
 
 /*ESTILO audio*/
@@ -135,6 +172,29 @@ header nav ul li{
 .colorLetra{
     color: black;
 }
+.cardsAudio{
+    width: 90%;
+}
+
+/* Media queries Tablet*/
+@media screen and (min-width: 415px) and (max-width: 768px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
+}
+/* Media queries celular*/
+@media screen and (min-width: 280px) and (max-width:414px){
+
+}
+
 
 /*ESTILO bio*/
 .tituloBio{
@@ -177,7 +237,18 @@ header nav ul li{
     transition: 1s;
 }
 /* Media queries tablet*/
-@media screen and (max-width: 768px){
+@media screen and (min-width: 415px) and (max-width: 768px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
     .gridBio{
         grid-template-areas: "parrafoBio parrafoBio"
                              "imgBio1 imgBio2"
@@ -240,90 +311,24 @@ header nav ul li{
 .colorLetra{
     color: black;
 }
-
-/* Grids obras*/
-/*.contenidoObras{
-    display: grid;
-    gap: 1.5rem;
-    margin: 3rem;
-    grid-template-areas: "parrafoObras parrafoObras parrafoObras"
-                         "partitura1 partitura2 partitura3"        
-                         "partitura4 partitura5 partitura6"
-                         "partitura7 partitura8 partitura9";
-}
-.parrafoObras{
-    grid-area: parrafoObras;
-}
-.partitura1{
-    grid-area: partitura1;
-}
-.partitura2{
-    grid-area: partitura2;
-}
-.partitura3{
-    grid-area: partitura3;
-}
-.partitura4{
-    grid-area: partitura4;
-}
-.partitura5{
-    grid-area: partitura5;
-}
-.partitura6{
-    grid-area: partitura6;
-}
-.partitura7{
-    grid-area: partitura7;
-}
-.partitura8{
-    grid-area: partitura8;
-}
-.partitura9{
-    grid-area: partitura9;
-}
-*/
 /* Media queries tablet*/
-/*@media screen and (max-width: 768px){
-    .contenidoObras{
-    grid-template-areas: "parrafoObras parrafoObras"
-                         "partitura1 partitura2"        
-                         "partitura3 partitura4"
-                         "partitura5 partitura6"
-                         "partitura7 partitura8"
-                         "partitura9 partitura9";
+@media screen and (min-width: 415px) and (max-width: 768px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
 }
+/* Media queries celular*/
+@media screen and (min-width: 280px) and (max-width:414px){
+
 }
-.parrafoObras{
-    grid-area: parrafoObras;
-}
-.partitura1{
-    grid-area: partitura1;
-}
-.partitura2{
-    grid-area: partitura2;
-}
-.partitura3{
-    grid-area: partitura3;
-}
-.partitura4{
-    grid-area: partitura4;
-}
-.partitura5{
-    grid-area: partitura5;
-}
-.partitura6{
-    grid-area: partitura6;
-}
-.partitura7{
-    grid-area: partitura7;
-}
-.partitura8{
-    grid-area: partitura8;
-}
-.partitura9{
-    grid-area: partitura9;
-} 
-*/
 
 /*ESTILO contacto*/
 
@@ -350,10 +355,22 @@ header nav ul li{
 .mapa{
     grid-area: mapa;
 }
-/* Media queries tablet*/
 
-@media screen and (max-width:768px){
+/* Media queries tablet*/
+@media screen and (min-width: 415px) and (max-width: 768px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
     .containerContacto{
+        
         grid-template-areas: "infoContacto"
                              "sectionContacto"
                              "mapa";
