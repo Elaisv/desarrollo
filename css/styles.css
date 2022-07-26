@@ -77,6 +77,13 @@ body{
         background-color: rgb(253, 218, 201);
         width: 100%;
     }
+    .nav-item{
+        background-color: white;
+        border-radius: 1rem;
+        font-weight: bold;
+        margin: 1rem;
+        padding: 0.3rem;
+    }
     .contenidoIndex{
         grid-template-areas: "titulos titulos"
                             "parrafo parrafo" 
@@ -109,6 +116,13 @@ body{
     .bgNav{
         background-color: rgb(253, 218, 201);
         width: 100%;
+    }
+    .nav-item{
+        background-color: white;
+        border-radius: 1rem;
+        font-weight: bold;
+        margin: 1rem;
+        padding: 0.2rem;
     }
     .contenidoIndex{
         grid-template-areas: "titulos"
@@ -145,12 +159,15 @@ body{
     justify-content: center;
 }
 .redes{
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    width: 50%;
+}
+.instagram, .facebook{
+    width: 10%;
 }
 .imgRedes{
-    width: 3.5%;
+    width: 20%;
 }
 .footer1{
     color: black;
@@ -164,6 +181,10 @@ body{
     text-align: center;
     font-size: 2rem;
     margin: 2rem;
+}
+.audioFlex{
+    display: flex;
+    justify-content: center;
 }
 .letra{
     color: black;
