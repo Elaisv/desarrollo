@@ -1,0 +1,112 @@
+/*Reseteo de estilos*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@import "utilities/bio";
+@import "utilities/medias";
+
+$font-titulos: 'Lucida Sans Unicode';
+
+/*Fondo Body*/
+body{
+    background: url(../img/fondo.webp);
+}
+/*Estilo titulos*/
+h1{
+    text-align: center;
+    font-family: $font-titulos;
+    font-size: 2rem;
+    margin: 2rem;
+}
+/*Nav*/
+.bannerHeader{
+    width: 100%;
+}
+.navbarEs{
+    justify-content: center;
+    .navElais{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-item{
+            background-color: white;
+            border-radius: 1.5rem;
+            font-weight: bold;
+            margin: 1.5rem;
+            padding: 0.5rem;
+            &:hover{
+                transition: all 0.5s;
+                transform: scale(1.1);
+            }
+            .linkElais{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+.imgs{
+    width: 70%;
+ }
+
+/*Grids Index*/
+.contenidoIndex{
+    display: grid;
+    gap: 2.5rem;
+    grid-template-areas: "titulos img1" 
+                         "parrafo img2";
+    margin: 5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.titulos{
+    grid-area: titulos;
+}
+.img1{
+    grid-area: img1;
+    display: flex;
+}
+.img2{
+    grid-area: img2;
+    display: flex;
+}
+.parrafo{
+    grid-area: parrafo;
+}
+
+
+/*ESTILO footer*/
+.footerElais{
+    background: rgb(247,218,171);
+    background: linear-gradient(0deg, rgba(247,218,171,1) 25%, rgba(239,204,230,1) 100%);
+    .contRedes{
+        display: flex;
+        justify-content: center;
+        .redes{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            .instagram, .facebook{
+                width: 10%;
+                .imgRedes{
+                    width: 20%;
+                }
+            }
+        }
+    }
+    .footer1{
+        color: black;
+        text-align: center;
+        font-size: 0.8em;
+        margin-bottom: 0px;
+    }
+}
+
+
+
+

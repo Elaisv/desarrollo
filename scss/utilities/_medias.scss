@@ -1,0 +1,140 @@
+/*Media queries tablet index*/
+@media screen and (min-width: 415px) and (max-width: 768px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+        .nav-item{
+            background-color: white;
+            border-radius: 1rem;
+            font-weight: bold;
+            margin: 1rem;
+            padding: 0.3rem;
+        }
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
+    .contenidoIndex{
+        grid-template-areas: "titulos titulos"
+                             "parrafo parrafo" 
+                             "img1 img2";
+    }
+    .titulos{
+        grid-area: titulos;
+        font-size: 1.4rem;
+    }
+    .parrafo{
+        grid-area: parrafo;
+        font-size: 1.1rem;
+    }
+    .img1{
+        grid-area: img1;
+    }
+    .img2{
+        grid-area: img2;
+    }
+}
+/*Media queries celular index*/
+@media screen and (min-width: 280px) and (max-width:414px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 15px;
+        .nav-item{
+            background-color: white;
+            border-radius: 1rem;
+            font-weight: bold;
+            margin: 1rem;
+            padding: 0.2rem;
+        }
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
+    .contenidoIndex{
+        grid-template-areas: "titulos"
+                             "parrafo"
+                             "img1"
+                             "img2";
+    }
+    .titulos{
+        grid-area: titulos;
+        font-size: 1.4rem;
+    }
+    .parrafo{
+        grid-area: parrafo;
+        font-size: 1.1rem;
+    }
+    .img1{
+        grid-area: img1;
+    }
+    .img2{
+        grid-area: img2;
+    }
+    .imgs{
+        width: 100%;
+    }
+}
+/* Media queries tablet BIO*/
+@media screen and (min-width: 415px) and (max-width: 768px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
+    .gridBio{
+        grid-template-areas: "parrafoBio parrafoBio"
+                             "imgBio1 imgBio2"
+                             "sectionBio sectionBio";
+    }
+    .parrafoBio{
+        grid-area: parrafoBio;
+    }
+    .imgBio1{
+        grid-area: imgBio1;
+       text-align: center;
+    }
+    .imgBio2{
+        grid-area: imgBio2;
+        text-align: center;
+    }
+    .sectionBio{
+        grid-area: sectionBio;
+    }
+}
+/* Media queries celular BIO*/
+@media screen and (min-width: 280px) and (max-width:414px) {
+    .imgBio {
+        width: 80%;
+    }
+    .gridBio{
+        grid-template-areas: "parrafoBio"
+                             "imgBio1" 
+                             "imgBio2"
+                             "sectionBio";
+    }
+    .parrafoBio{
+        grid-area: parrafoBio;
+    }
+    .imgBio1{
+        grid-area: imgBio1;
+    }
+    .imgBio2{
+        grid-area: imgBio2;
+    }
+    .sectionBio{
+        grid-area: sectionBio;
+    }
+}

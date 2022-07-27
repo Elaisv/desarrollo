@@ -1,0 +1,31 @@
+/* Grids BIO*/
+.gridBio{
+    display: grid;
+    gap: 15px;
+    align-items: center;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    margin-right: 5rem;
+    grid-template-areas: "parrafoBio parrafoBio"
+                         "imgBio1 imgBio2"
+                         "sectionBio sectionBio";
+}
+.parrafoBio{
+    grid-area: parrafoBio;
+}
+.imgBio1{
+    grid-area: imgBio1;
+   text-align: center;
+}
+.imgBio2{
+    grid-area: imgBio2;
+    text-align: center;
+}
+.sectionBio{
+    grid-area: sectionBio;
+}
+.imgBio{
+    width: 50%;
+    object-fit: contain;
+    transition: 1s;
+}
