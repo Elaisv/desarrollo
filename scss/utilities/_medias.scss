@@ -138,3 +138,105 @@
         grid-area: sectionBio;
     }
 }
+/* Media queries Tablet Audio*/
+@media screen and (min-width: 415px) and (max-width: 768px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
+}
+/* Media queries celular Audio*/
+@media screen and (min-width: 280px) and (max-width:414px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
+}
+/* Media queries tablet Obras*/
+@media screen and (min-width: 415px) and (max-width: 768px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
+}
+/* Media queries celular Obras*/
+@media screen and (min-width: 280px) and (max-width:414px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+    }
+    .bgNav{
+        background-color: fondo-menu;
+        width: 100%;
+    }
+}
+/* Media queries tablet Contacto*/
+@media screen and (min-width: 415px) and (max-width: 768px){
+    .navbarEli{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 1rem;
+        z-index: 99;
+    }
+    .bgNav{
+        background-color: rgb(253, 218, 201);
+        width: 100%;
+    }
+    .containerContacto{
+        
+        grid-template-areas: "infoContacto"
+                             "sectionContacto"
+                             "mapa";
+        
+    }
+    .infoContacto{
+        grid-area: infoContacto;
+    }
+    .sectionContacto{
+        grid-area: sectionContacto;
+    }
+    .mapa{
+        grid-area: mapa;
+    }
+}
+/* Media queries celular Contacto*/
+@media screen and (min-width: 280px) and (max-width: 414px) {
+    .mapa{
+        display: none;
+    }
+    .containerContacto{
+        grid-template-areas: "infoContacto"
+                             "sectionContacto"
+    }
+    .infoContacto{
+        grid-area: infoContacto;
+    }
+    .sectionContacto{
+        grid-area: sectionContacto;
+    }
+}

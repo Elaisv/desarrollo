@@ -5,6 +5,13 @@
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
 
+/*BIO*/
+/*.tituloBio{
+    @include titulos;
+}*/
+.imgBio:hover {
+  transform: scale(1.1); }
+
 /* Grids BIO*/
 .gridBio {
   display: grid;
@@ -13,7 +20,9 @@
   margin-left: 5rem;
   margin-bottom: 3rem;
   margin-right: 5rem;
-  grid-template-areas: "parrafoBio parrafoBio" "imgBio1 imgBio2" "sectionBio sectionBio"; }
+  grid-template-areas: "parrafoBio parrafoBio"
+                       "imgBio1 imgBio2"
+                       "sectionBio sectionBio"; }
 
 .parrafoBio {
   grid-area: parrafoBio; }
@@ -52,7 +61,9 @@
     background-color: #fddac9;
     width: 100%; }
   .contenidoIndex {
-    grid-template-areas: "titulos titulos" "parrafo parrafo"  "img1 img2"; }
+    grid-template-areas: "titulos titulos"
+                         "parrafo parrafo" 
+                         "img1 img2"; }
   .titulos {
     grid-area: titulos;
     font-size: 1.4rem; }
@@ -81,7 +92,10 @@
     background-color: #fddac9;
     width: 100%; }
   .contenidoIndex {
-    grid-template-areas: "titulos" "parrafo" "img1" "img2"; }
+    grid-template-areas: "titulos"
+                         "parrafo"
+                         "img1"
+                        "img2"; }
   .titulos {
     grid-area: titulos;
     font-size: 1.4rem; }
@@ -107,7 +121,9 @@
     background-color: #fddac9;
     width: 100%; }
   .gridBio {
-    grid-template-areas: "parrafoBio parrafoBio" "imgBio1 imgBio2" "sectionBio sectionBio"; }
+    grid-template-areas: "parrafoBio parrafoBio"
+                         "imgBio1 imgBio2"
+                         "sectionBio sectionBio"; }
   .parrafoBio {
     grid-area: parrafoBio; }
   .imgBio1 {
@@ -124,7 +140,10 @@
   .imgBio {
     width: 80%; }
   .gridBio {
-    grid-template-areas: "parrafoBio" "imgBio1"  "imgBio2" "sectionBio"; }
+    grid-template-areas: "parrafoBio"
+                         "imgBio1" 
+                         "imgBio2"
+                         "sectionBio"; }
   .parrafoBio {
     grid-area: parrafoBio; }
   .imgBio1 {
@@ -134,6 +153,141 @@
   .sectionBio {
     grid-area: sectionBio; } }
 
+/* Media queries Tablet Audio*/
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .navbarEli {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    z-index: 99; }
+  .bgNav {
+    background-color: #fddac9;
+    width: 100%; } }
+
+/* Media queries celular Audio*/
+@media screen and (min-width: 280px) and (max-width: 414px) {
+  .navbarEli {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    z-index: 99; }
+  .bgNav {
+    background-color: #fddac9;
+    width: 100%; } }
+
+/* Media queries tablet Obras*/
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .navbarEli {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    z-index: 99; }
+  .bgNav {
+    background-color: #fddac9;
+    width: 100%; } }
+
+/* Media queries celular Obras*/
+@media screen and (min-width: 280px) and (max-width: 414px) {
+  .navbarEli {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    z-index: 99; }
+  .bgNav {
+    background-color: fondo-menu;
+    width: 100%; } }
+
+/* Media queries tablet Contacto*/
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .navbarEli {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    z-index: 99; }
+  .bgNav {
+    background-color: #fddac9;
+    width: 100%; }
+  .containerContacto {
+    grid-template-areas: "infoContacto"
+                         "sectionContacto"
+                         "mapa"; }
+  .infoContacto {
+    grid-area: infoContacto; }
+  .sectionContacto {
+    grid-area: sectionContacto; }
+  .mapa {
+    grid-area: mapa; } }
+
+/* Media queries celular Contacto*/
+@media screen and (min-width: 280px) and (max-width: 414px) {
+  .mapa {
+    display: none; }
+  .containerContacto {
+    grid-template-areas: "infoContacto"
+                         "sectionContacto"; }
+  .infoContacto {
+    grid-area: infoContacto; }
+  .sectionContacto {
+    grid-area: sectionContacto; } }
+
+.tituloAudio {
+  text-align: center;
+  color: black;
+  font-family: "Lucida Sans Unicode";
+  font-size: 2rem;
+  margin: 2rem; }
+
+.colorLetra {
+  color: black; }
+
+.cardsAudio {
+  width: 90%; }
+
+/*Obras*/
+.tituloObras {
+  text-align: center;
+  color: black;
+  font-family: "Lucida Sans Unicode";
+  font-size: 2rem;
+  margin: 2rem; }
+
+.colorDesc {
+  color: black;
+  background-color: #eeaa7d; }
+
+.colorLetra {
+  color: black; }
+
+/*Contacto*/
+.tituloContacto {
+  text-align: center;
+  color: black;
+  font-family: "Lucida Sans Unicode";
+  font-size: 2rem;
+  margin: 2rem; }
+
+/* Grids contacto */
+.containerContacto {
+  display: grid;
+  gap: 2rem;
+  margin: 5rem;
+  grid-template-areas: "infoContacto infoContacto"
+ "sectionContacto mapa"; }
+
+.infoContacto {
+  grid-area: infoContacto; }
+
+.sectionContacto {
+  grid-area: sectionContacto; }
+
+.mapa {
+  grid-area: mapa; }
+
 /*Fondo Body*/
 body {
   background: url(../img/fondo.webp); }
@@ -141,6 +295,7 @@ body {
 /*Estilo titulos*/
 h1 {
   text-align: center;
+  color: black;
   font-family: "Lucida Sans Unicode";
   font-size: 2rem;
   margin: 2rem; }
@@ -176,7 +331,8 @@ h1 {
 .contenidoIndex {
   display: grid;
   gap: 2.5rem;
-  grid-template-areas: "titulos img1"  "parrafo img2";
+  grid-template-areas: "titulos img1" 
+                       "parrafo img2";
   margin: 5rem;
   justify-content: center;
   justify-items: center;

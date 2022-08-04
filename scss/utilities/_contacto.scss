@@ -1,0 +1,21 @@
+/*Contacto*/
+.tituloContacto{
+    @include titulos;
+}
+/* Grids contacto */
+.containerContacto{
+    display: grid;
+    gap: 2rem;
+    margin: 5rem;
+    grid-template-areas: "infoContacto infoContacto"
+                         "sectionContacto mapa";
+}
+.infoContacto{
+    grid-area: infoContacto;
+}
+.sectionContacto{
+    grid-area: sectionContacto;
+}
+.mapa{
+    grid-area: mapa;
+}

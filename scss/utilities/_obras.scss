@@ -1,0 +1,11 @@
+/*Obras*/
+.tituloObras{
+    @include titulos;
+}
+.colorDesc{
+    color: black;
+    background-color:rgb(238, 170, 125);
+}
+.colorLetra{
+    color: black;
+}
